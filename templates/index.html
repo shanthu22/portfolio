@@ -54,16 +54,34 @@
                 </div>
             </div>
             <div class="row">
-                {% for service in services %}
+                
     {# service 1 #}
                     <div class="col-md-4 col-sm-4">
                         <div class="single-service wow fadeInDown" data-wow-delay="0.2s">
                             <i class="icon icon-wallet"></i>
-                            <h2>{{ service.name }}</h2>
-                            <p>{{ service.description }}</p>
+                            <h2>service name </h2>
+                            <p>service description </p>
                         </div>
                     </div>
-                {% endfor %}
+            {# end  1 #}       
+    {# service 2 #}
+       <div class="col-md-4 col-sm-4">
+        <div class="single-service wow fadeInDown" data-wow-delay="0.2s">
+            <i class="icon icon-wallet"></i>
+            <h2>service name </h2>
+            <p>service description </p>
+        </div>
+    </div>
+        {# end 2 #} 
+    {# service 3 #}
+   <div class="col-md-4 col-sm-4">
+    <div class="single-service wow fadeInDown" data-wow-delay="0.2s">
+        <i class="icon icon-wallet"></i>
+        <h2>service name </h2>
+        <p>service description </p>
+    </div>
+</div>
+        {# end 3 #}      
             </div>
         </div>
     </div>
@@ -79,19 +97,52 @@
                 </div>
             </div>
             <div class="row">
-                {% for work in works %}
+    {# Works Section 1 #}            
                     <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
                         <div class="gallery-items">
-                            <a class="view img" href="{{ work.image.url }}">
-                                <img src="{{ work.image.url }}" alt="work image">
+                            <a class="view img" href="{% static 'images\profile.JPG' %}" >
+                                
+                               
+                                <img src="{% static 'images\6.jpg' %}"  alt="work image">
+                                
                             </a>
 
                             <div class="gallery-text">
-                                <h2>{{ work.title }}</h2>
+                                <h2> E-Commerce website  </h2>
                             </div>
                         </div>
                     </div>
-                {% endfor %}
+      {#  end of Works Section 1 #}      
+      
+      {# Works Section 2 #}            
+      <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+        <div class="gallery-items">
+            <a class="view img" href="{% static 'images\6.jpg' %}" >
+               
+                <img src="{% static 'images\6.jpg' %}"  alt="work image">
+            </a>
+
+            <div class="gallery-text">
+                <h2> E-Commerce website  </h2>
+            </div>
+        </div>
+    </div>
+{#  end of Works Section 2 #}  
+
+{# Works Section 3 #}            
+<div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+    <div class="gallery-items">
+        <a class="view img" href="{% static 'images\6.jpg' %}" >
+           
+            <img src="{% static 'images\6.jpg' %}"  alt="work image">
+        </a>
+
+        <div class="gallery-text">
+            <h2> E-Commerce website  </h2>
+        </div>
+    </div>
+</div>
+{#  end of Works Section 3 #}
             </div>
         </div>
     </div>
